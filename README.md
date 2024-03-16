@@ -1,79 +1,57 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# My Notes
 
-# Getting Started
+<p>This project is a notes-taking mobile application built using React Native.</p>
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+<p> Here's a brief summary of its components and functionalities:</p>
 
-## Step 1: Start the Metro Server
+<h3>Project Structure:</h3>
+*The project is organized into different files and directories, following a typical React Native project structure.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+<h3>Dependencies:</h3>
+*It utilizes various dependencies including @react-navigation/native and @react-navigation/native-stack for navigation, and other packages for styling and UI components.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+<h3>Context Provider:</h3>
+*The Provider component manages the state of notes. It provides functionalities like adding, updating, and deleting notes.
 
-```bash
-# using npm
-npm start
+<h3>Screens:</h3>
 
-# OR using Yarn
-yarn start
-```
+1. MyNotes Screen:
+- Displays a list of notes.
+- Allows navigation to the details of a particular note and deletion of notes.
 
-## Step 2: Start your Application
+2. AddNotes Screen:
+- Provides a form to add a new note or update an existing one.
+- Validates input fields for title and description.
+- Saves or updates notes based on user input.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+3. NoteDetails Screen:
+- Displays the details of a specific note.
+- Provides options to edit note details like bold, italic, underline, and alignment.
 
-### For Android
+<h3>Components:</h3>
+* <b>Header: Displays the header of the application with navigation options.</b>
+* <b>SaveButton: Renders a button for saving notes.</b>
+* <b>MenuButtons: Renders buttons for formatting text (bold, italic, underline) and alignment options.</b>
+* <b>AddButton: Displays a button for adding new notes.</b>
+* <b>NotesCard: Represents a card view for displaying individual notes with options to delete or update them.</b>
 
-```bash
-# using npm
-npm run android
+<h3>Styles:</h3>
+* The project utilizes style constants defined in the style.js file for consistent styling across components.
 
-# OR using Yarn
-yarn android
-```
+<h3>Navigation:</h3>
+* The application uses React Navigation for navigation between different screens.
 
-### For iOS
+<h3>Context API:</h3>
+* It leverages the React Context API for managing state and sharing data between components.
 
-```bash
-# using npm
-npm run ios
+<h3>Functionality:</h3>
+* Users can add new notes, update existing notes, and delete notes.
+* Notes can be formatted with bold, italic, and underline styles.
+* Text alignment options (left, center, right) are available for note details.
 
-# OR using Yarn
-yarn ios
-```
+<h3>Overall:</h3>
+*This project serves as a basic notes app prototype with essential features like CRUD operations on notes and simple text formatting options.
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+Screen gif:
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+![](notes-screen.gif)
